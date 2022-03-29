@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border:1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>texto</th>
+            <th>texto</th>
+            <th>texto</th>
+        </tr>
+        <tr>
+            <td>texto</td>
+            <td>texto</td>
+            <td>texto</td>
+        </tr>
+        <tr>
+            <td>texto</td>
+            <td>texto</td>
+            <td>texto</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>texto</td>
+                <td>texto</td>
+                <td>texto</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+    <p>propriedade colspan mescla colunas na tabela</p>
+
+    <table>
+        <tr>
+            <th colspan="3">colunas mescladas</th>
+        </tr>
+        <tr>
+            <td>texto</td>
+            <td>texto</td>
+            <td>texto</td>
+        </tr>
+        <tr>
+            <td>texto</td>
+            <td>texto</td>
+            <td>texto</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>texto</td>
+                <td>texto</td>
+                <td>texto</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>propriedade rowspan mescla colunas na tabela</p>
+
+    <table>
+        <tr>
+        <th rowspan="3">header 1</th>
+        <th>header2</th>
+        <th>header3</th>
+        </tr>
+        <tr>
+            <td>texto</td>
+            <td rowspan="2">texto</td>
+        </tr>
+        <tr>
+            <td>texto</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

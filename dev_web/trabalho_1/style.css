@@ -1,0 +1,28 @@
+html, body{
+    padding-left: 0px;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.header{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(46, 38, 38);
+}
+.href{
+    display: flex;
+    justify-content: space-between;
+}
+.presentation{
+    display: flex;
+    flex-direction: row;
+
+}
+.posts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
