@@ -1,28 +1,73 @@
 html, body{
-    padding-left: 0px;
-    border: 0;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
 }
 
 .header{
-    
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(46, 38, 38);
+    background-color: rgb(0, 0, 0);
+}
+.general{
+    padding-left: 20px;
 }
 .href{
     display: flex;
     justify-content: space-between;
+    padding-left: 20px;
+    width: 30%;
+}
+.href a{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #818181;
+}
+.name{
+    color:#818181;
+}
+.href a:hover, .name:hover{
+    color: #f1f1f1;
+    transition: 0.3s;
 }
 .presentation{
     display: flex;
     flex-direction: row;
 
 }
+.presentation_dsc{
+    position: flex;
+    padding-left: 20px;
+    width: 400px;
+}
 .posts{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.post_desc{
+    position: flex;
+    margin-right: 1100px;
+}
+.final_dsc{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    width: 100px;
+}
+.final_dsc a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    font-size: 25px;
+}
+.final_dsc a:hover{
+    color: hsl(0, 100%, 50%);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    
 }
