@@ -1,32 +1,100 @@
-.tabuleiro{
-    max-width: 800px;
-    max-height: 800px;
-    width: 50vw;
-    height: 90vh;
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+.body, html{
+    padding: 0;
+    border: 0;
+    margin: auto;
+    font-size: 2vw;
 }
+
+
 .borders{
-    border: solid 10px #000;
-    width: 50.5vw;
+    border: solid 1vw #000;
+    width: min-content;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    align-content: center;
 }
 .borders-out{
-    border: solid 15px transparent;
+    border: solid 1vw transparent;
+    height: min-content;
+    text-align: center;
+    align-items: center;
+
+    
+
 }
 .borders-outer{
+    width: min-content;
     
+}
+.bordergrid{
+    display: grid;
+    color: #fff;
+    grid-template-rows: repeat(12, 0fr);
+    grid-template-columns: repeat(12, 0fr);
+    width: 100%;
+    grid: 100%;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    
+}
+.borderbox{
+    width: 5.6vw;
+    height: 10vh;
+    background-color: #000;
+    grid-auto-flow:row;
+    color: #fff;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    
+}
+.borderbox-small{
+    width: 5.6vw;
+    height: 4vh;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    
+}
+.borderbox-small-scd{
+    width: 5.6vw;
+    height: 4.8vh;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    
+}
+.bordergrid .borderbox-small{
+    width: 3.8vw;
+    height: 10vh;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    
+}
+.letters-upper{
+    flex: 1;
+    position: absolute;
+    color: #fff;
+    padding-left: 0.5vw;
 }
 .linha1{
     display: grid;
-    grid-template-rows: repeat(9, 0fr);
-    grid-template-columns: repeat(9, 0fr);
+    grid-template-rows: repeat(8, 0fr);
+    grid-template-columns: repeat(8, 0fr);
 }
 .linha2{
     display: grid;
-    grid-template-rows: repeat(9, 0fr);
-    grid-template-columns: repeat(9, 0fr);
+    grid-template-rows: repeat(8, 0fr);
+    grid-template-columns: repeat(8, 0fr);
 }
 .light{
     width: 5.6vw;
@@ -38,4 +106,26 @@
     width: 5.6vw;
     height: 10vh;
     background-color: #000;
+}
+.tabuleiro{
+
+    width: min-content;
+    height: min-content;
+    background-color: red;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    
+}
+
+.numbers-general{
+    display: flex;
+    flex-direction: row;
+}
+
+.bordergrid-numbers.side{
+    transform: rotate(180deg);
+}
+.bordergrid.side  .borderbox{
+    transform: rotate(180deg);
 }
