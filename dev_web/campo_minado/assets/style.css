@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.general{
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+
+.template{
+    width: min-content;
+    height: min-content;
+    background-color: #a3a3a3;
+    border: solid 5px #a3a3a3;
+    border-left-color: #757575;
+    border-bottom-color: #757575;
+    border-top-color: #b6b6b6;
+    border-right-color: #b6b6b6;
+}
+.lineHolder{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 00.5vh;
+}
+.checkbox{
+    width: 3.5vw;
+    height: 4vh;
+}
+.square{
+    width: 3.5vw;
+    height: 4vh;
+    background-color: #bebebe;
+    border: solid 0.5vh #a3a3a3;
+    border-left-color: #757575;
+    border-bottom-color: #757575;
+    border-top-color: #b6b6b6;
+    border-right-color: #b6b6b6;
+    transition: 0.2s;
+
+}
+.square:hover{
+    background-color: #757575;
+    border: solid 0.5vh transparent;
+    border-left-color: #5a5a5a;
+    border-bottom-color: #5a5a5a;
+    border-top-color: #7e7e7e;
+    border-right-color: #7e7e7e;
+    
+}
+input[type="checkbox"].checkbox:checked + .square{
+    background-color: red;
+    width: 10px;
+}
+.squareLine1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5vh;
+    margin-left: 0.5vh;
+}
