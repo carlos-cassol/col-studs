@@ -4,7 +4,8 @@
 }
 
 .general{
-    background-color: red;
+    background-image: url(../img/thumb-1920-941898.jpg);
+    background-size: cover;
     justify-content: center;
     align-items: center;
     display: flex;
