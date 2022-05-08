@@ -30,6 +30,7 @@
 .checkbox{
     width: 3.5vw;
     height: 4vh;
+    display: none;
 }
 .square{
     width: 3.5vw;
@@ -41,6 +42,10 @@
     border-top-color: #b6b6b6;
     border-right-color: #b6b6b6;
     transition: 0.2s;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
 }
 .square:hover{
@@ -52,13 +57,75 @@
     border-right-color: #7e7e7e;
     
 }
-input[type="checkbox"].checkbox:checked + .square{
-    background-color: red;
-    width: 10px;
-}
+
 .squareLine1{
     display: flex;
     flex-direction: row;
     margin-top: 0.5vh;
     margin-left: 0.5vh;
+}
+
+
+.bomba{
+    width: 3.5vw;
+    height: 4vh;
+    background-color: #bebebe;
+    border-left-color: #757575;
+    border-bottom-color: #757575;
+    border-top-color: #b6b6b6;
+    border-right-color: #b6b6b6;
+    transition: 0.2s;
+    position: absolute;
+
+}
+
+.bomba:focus{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff0000;
+    background-size: 100% 100%;
+    border: 0;
+}
+.bomba:hover{
+    
+    border-left-color: #5a5a5a;
+    border-bottom-color: #5a5a5a;
+    border-top-color: #7e7e7e;
+    border-right-color: #7e7e7e;
+    
+}
+
+.nm{
+    width: 3.5vw;
+    height: 4vh;
+    background-color: #bebebe;
+    border-left-color: #757575;
+    border-bottom-color: #757575;
+    border-top-color: #b6b6b6;
+    border-right-color: #b6b6b6;
+    transition: 0.2s;
+    position: absolute;
+
+}
+
+.nm:focus{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00b800;
+    background-size: 100% 100%;
+    border: 0;
+}
+.nm:hover{
+    
+    border-left-color: #5a5a5a;
+    border-bottom-color: #5a5a5a;
+    border-top-color: #7e7e7e;
+    border-right-color: #7e7e7e;
+    
 }
