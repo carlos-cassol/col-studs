@@ -31,6 +31,7 @@ function ovrl() {
             const nota1 = form.querySelector('.nota1')
             const nota2 = form.querySelector('.nota2')
             const nota3 = form.querySelector('.nota3')
+            const notaExame = prompt("Digite a nota do exame: ")
             const media = ((Number(nota1.value)) + (Number(nota2.value)) + (Number(nota3.value)))/3
             
 
@@ -52,7 +53,7 @@ function ovrl() {
 
             exame(media)
             const exNota = exame(media)
-            function calculo(media, exNota){
+            function calculo(media, exNota, notaExame){
                     if (media >= 7 && presenca(select) >= 75) {
                         result.innerHTML += `<p>Aluno ${name.value} da turma ${turma.value}, você está aprovado com média ${media} e participou de ${select.value} aulas<p>`
                     
@@ -61,11 +62,13 @@ function ovrl() {
                     
                     }else if (media < 7 && presenca(select) >= 75) {
                         result.innerHTML += `<p>Aluno ${name.value} da turma ${turma.value}, você está em exame com média ${media} e participou de ${select.value} aulas. Você precisa tirar ${exNota} no exame para ser aprovado.<p>`
-                    
+                        notaExame
+                            if (notaExame < exNota) {result.innerHTML += `<p>Infelizmente você foi reprovado com a nota ${notaExame}. Você precisava tirar ${exNota} para ser aprovado</p>`
+                        } else {result.innerHTML += `<p>Você foi aprovado com a nota do exame. Sua nota foi de ${notaExame}. Parabéns!</p>`}
                     } else { result.innerHTML += `<p>Aluno ${name.value} da turma ${turma.value}, infelizmente, você está reprovado com média ${media} e participou de ${select.value} aulas<p>`}
                 }
                 presenca(select)
-                calculo(media, exNota)
+                calculo(media, exNota, notaExame)
         }
         form.addEventListener('submit', evForm)
 }
