@@ -1,40 +1,56 @@
-const matriz =      [ [1,2,3, 4],
-                      [5,6,7,8],
-                      [9,10,11,12],
-                      [13,14,15,16] ];
+const tbl = new Array([1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16])
+console.table(tbl)
 
 
-const a = matriz[00][00] 
-const b = matriz[00][01] 
-const c = matriz[00][02] 
-const d = matriz[00][03] 
+
+//questão 1
+var questao1 = tbl[0][0] + tbl[1][0] + tbl[2][0] + tbl[3][0]
+console.log("Questão 1: " + questao1)
 
 
-const aa = matriz[01][00] 
-const bb = matriz[01][01] 
-const cc = matriz[01][02] 
-const dd = matriz[01][03] 
 
-const aaa = matriz[02][00] 
-const bbb = matriz[02][01] 
-const ccc = matriz[02][02] 
-const ddd = matriz[02][03] 
 
-const ab = matriz[03][00] 
-const bc = matriz[03][01] 
-const cd = matriz[03][02] 
-const de = matriz[03][03] 
-//soma da primeira linha
-var soma = a + b + c + d
-console.log(soma);
-//produto da primeira linha
+//questão 2
+var line = tbl[0]
+var qst2 = 0
+var product = 1
 
-var soma = a * b * c * d
-console.log(soma);
-//soma de tudo
-var soma = a + b + c + d + aa + bb + cc + dd + aaa + bbb + ccc + ddd + ab + bc + cd + de
-console.log(soma);
 
-//produto diagonal principal
-const somap = a * bb * ccc * de
-console.log(somap);
+
+
+for(var i = 0; i < line.length; i++) {
+    product = product * line[i]
+    qst2 = product
+}
+console.log("Questão 2: " + qst2)
+
+
+
+//questão 3
+var qst3 = 0
+
+
+
+for(var i = 0; i < tbl.length; i++) {
+    for( var j = 0; j < tbl.length;  j++) {
+        qst3 += tbl[i][j]
+    }
+}
+console.log("questão 3: " + qst3)
+
+
+
+//questão 4
+var qst4 = 0
+var product2 = 1
+
+for (var i = 0; i < tbl.length; i++) {
+    for (var j = 0; j < tbl[i].length; j++) {
+    if (i == j) 
+    product2 = product2 * tbl[i][j];
+    qst4  = product2
+    
+            }
+        }
+              
+console.log("Questão 4: " + qst4)
